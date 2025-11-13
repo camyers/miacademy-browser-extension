@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miacademy Element Hider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Miacademy Element Hider</h1>
+      <button id="close-popup" class="close-button" aria-label="Close popup">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </header>
+    
+    <div class="button-group">
+      <button id="select-all" class="btn-secondary">Select All</button>
+      <button id="deselect-all" class="btn-secondary">Deselect All</button>
+    </div>
+    
+    <div class="section">
+      <h2>Navigation</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-all-lessons" data-category="navigation" data-element="all-lessons">
+        <span>Hide All Lessons</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-my-world" data-category="navigation" data-element="my-world">
+        <span>Hide My World</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>Left Navigation</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-learning-path" data-category="left-nav" data-element="learning-path">
+        <span>Hide On your Learning Path</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-tell-me-more" data-category="left-nav" data-element="tell-me-more">
+        <span>Hide Tell me more</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-your-challenges" data-category="left-nav" data-element="your-challenges">
+        <span>Hide Your Challenges Solved Link</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>Header</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-tutorial-videos" data-category="header" data-element="tutorial-videos">
+        <span>Hide Tutorial Videos</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>Footer</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-footer" data-category="footer" data-element="footer">
+        <span>Hide Footer</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2>Global</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="hide-help-icon" data-category="global" data-element="help-icon">
+        <span>Hide Help Icon</span>
+      </label>
+    </div>
+
+    <div class="footer">
+      <div class="action-buttons">
+        <button id="cancel" class="btn-cancel">Cancel</button>
+        <button id="apply-changes" class="btn-primary">Apply Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
